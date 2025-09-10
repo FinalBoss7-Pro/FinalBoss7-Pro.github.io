@@ -14,4 +14,4 @@ Demo: https://joaomlneto.github.io/jekyll-multiverse-template/
 
 ## Showcase
 
-- [My grandfather's paintings](https://rodrigues.neto.pt)
+- [KiCad Project Gallery](https://kicad.org/made-with-kicad/)
