@@ -10,17 +10,22 @@
       {%- include header.html -%}
 
       <div id="main">
-        {% for image in site.images %}
+        {% for project in site.images %}
         <article class="thumb">
-          <a href="{{site.baseurl}}/assets/images/fulls/{{ image.path | split: '/' | last | split: '.' | first }}.jpg" class="image">
-            <img src="{{site.baseurl}}/assets/images/thumbs/{{ image.path | split: '/' | last | split: '.' | first }}.jpg" alt="{{ image.title }}" />
+          <a href="{{site.baseurl}}/assets/images/fulls/{{ project.path | split: '/' | last | split: '.' | first }}.jpg" class="image">
+            <img src="{{site.baseurl}}/assets/images/thumbs/{{ project.path | split: '/' | last | split: '.' | first }}.jpg" alt="KiCad project: {{ project.title }}" />
           </a>
-          <h2>{{ image.title }}</h2>
-          <p>{{ image.caption }}</p>
+          <h2>{{ project.title }}</h2>
+          <p>{{ project.caption }}</p>
+          {% if project.kicad_url %}
+            <p>
+              <a href="{{ project.kicad_url }}" target="_blank" rel="noopener">View KiCad Files</a>
+            </p>
+          {% endif %}
         </article>
         {% endfor %}
 
-        <!-- no idea where to put this... -->
+        <!-- Optional: Additional content such as instructions or project details can go here -->
         <!-- {{ content }} -->
       </div>
 
