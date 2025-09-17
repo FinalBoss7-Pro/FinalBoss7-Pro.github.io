@@ -2,7 +2,7 @@
 layout: default
 modal-id: 1
 date: 2014-07-18
-img: cabin.png
+img: 'C:\Users\HP\Documents\GitHub\FinalBoss7-Pro.github.io\img\portfolio\pexels-tima-miroshnichenko-6755087.jpg'
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
